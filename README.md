@@ -69,8 +69,26 @@ An intelligent shopping application showcasing AI-powered product recommendation
    ```
 
 4. **Initialize the database and load data**
+   
+   **Option A: Direct Python execution**
    ```bash
    python src/connect_encode.py
+   ```
+   
+   **Option B: Using OpenShift AI Elyra Pipeline**
+   ```bash
+   # Trigger the complete initialization pipeline through Elyra
+   # This runs the notebooks in the elyra_pipeline/ directory in sequence:
+   # 1. prepare_schema.ipynb - Database schema setup
+   # 2. populate_catalog.ipynb - Load product data
+   # 3. upload_images.ipynb - Upload images to S3
+   # 4. create_extensions.ipynb - Setup AIDB extensions
+   # 5. create_retrievers.ipynb - Create AI models and knowledge bases
+   # 6. compute_text_embeddings.ipynb - Generate text embeddings
+   # 7. compute_image_embeddings.ipynb - Generate image embeddings
+   
+   # Execute via Elyra Pipeline (requires OpenShift AI environment)
+   elyra-pipeline run init-recommender.pipeline
    ```
 
 5. **Run the application**
