@@ -1,6 +1,6 @@
-# EDB AI Recommender
+# Intelligent Shopping Experience
 
-An intelligent shopping application showcasing AI-powered product recommendations using **OpenShift AI** and **EDB Postgres AI**. The application demonstrates advanced machine learning capabilities including multimodal search, vector embeddings, and AI-generated content summarization powered by OpenShift AI's Elyra pipelines and model serving, with EDB Postgres AI's AIDB extension for vector operations.
+An intelligent shopping experience showcasing AI-powered product recommendations using **OpenShift AI** and **EDB Postgres AI**. The application demonstrates advanced machine learning capabilities including multimodal search, vector embeddings, and AI-generated content summarization powered by OpenShift AI's Elyra pipelines and model serving, with EDB Postgres AI's AIDB extension for vector operations. It enhances the user shopping experience by presenting similar items and providing summarized insights from user reviews.
 
 ## 🌟 Features
 
