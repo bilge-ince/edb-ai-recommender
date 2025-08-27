@@ -285,7 +285,7 @@ def create_and_refresh_retriever(conn):
         cur.execute(
             f"""select aidb.create_model(
             'product_review_model' 
-            ,'completions', 
+            ,'completions' 
             ,'{genai_config}'::JSONB);"""
         )
         vector_time = time.time() - start_time
