@@ -70,12 +70,7 @@ An intelligent shopping application showcasing AI-powered product recommendation
 
 4. **Initialize the database and load data**
    
-   **Option A: Direct Python execution**
-   ```bash
-   python src/connect_encode.py
-   ```
-   
-   **Option B: Using OpenShift AI Elyra Pipeline**
+   **Option A: Using OpenShift AI Elyra Pipeline**
    ```bash
    # Trigger the complete initialization pipeline through Elyra
    # This runs the notebooks in the elyra_pipeline/ directory in sequence:
@@ -89,6 +84,11 @@ An intelligent shopping application showcasing AI-powered product recommendation
    
    # Execute via Elyra Pipeline (requires OpenShift AI environment)
    elyra-pipeline run init-recommender.pipeline
+   ```
+
+   **Option B: Direct Python execution**
+   ```bash
+   python src/connect_encode.py
    ```
 
 5. **Run the application**
